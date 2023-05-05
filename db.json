@@ -1,4 +1,65 @@
 {
+  "services":[
+    {
+    "_id": "custom-plumbing-job-hourly",
+    "category": [
+      {
+        "_id": {
+          "$oid": "63fbce632e74b721f7424b87"
+        },
+        "categoryName": "Misc",
+        "description": "Misc. plumbing work",
+        "ancestor": [
+          {
+            "name": "Services",
+            "path": "/services"
+          },
+          {
+            "name": "Plumbing",
+            "path": "/services/plumbing"
+          }
+        ],
+        "slug": "plumbing-misc",
+        "path": "services/plumbing/plumbing-misc"
+      }
+    ],
+    "description": "Custom Hourly Plumbing Job with Free Estimate.",
+    "quantity": {
+      "prompt": null,
+      "minimum": 1,
+      "maximum": 1
+    },
+    "pricing": {
+      "hourly": {
+        "regularHours": {
+          "firstHourValue": 100.00,
+          "additionalHoursValue": 45.00,
+          "additionalHoursType": "dollar"
+        },
+        "afterHours": {
+          "firstHourValue": 200.00,
+          "additionalHoursValue": 50,
+          "additionalHoursType": "percentage"
+        },
+        "estimatedHours": 0,
+        "isFreeEstimate": true
+      }
+    },
+    "facets": {},
+    "questions": [],
+    "jobMaterialQuestions": [],
+    "subServices": [],
+    "settings": {
+      "consumerNotesPrompt": "please describe in your own words what kind of job you need help with.",
+      "mediaUploadPrompt": "please upload at least one type of media such as a picture, video, or audio recording so we can understand the job in question.",
+      "isConsumerNotesRequired": true,
+      "isMediaPhotoRequired": false,
+      "isMediaVideoRequired": false,
+      "isMediaVoicenoteRequired": false,
+      "minimumMediaTypesRequired": 1
+    }
+  }
+  ],
   "profile": {
     "name": "typicode"
   }
